@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>    
-    .portada {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
-</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <style>    
+        body{
+            margin: 0;
+        }
+        .portada {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        color:red;
+        font-size: 40px;
+        }
+    </style>
 
-    <img src="Assets/obra-civil-obra-civil.jpg" alt="Fotografia de la organización" class="portada">
 
-    <h1>Calculadora</h1>
-    <h3>¿Que desea hacer?  LOL</h3>
 </head>
 <body>
-    
+    <img src="assets/obra-civil-obra-civil.jpg" alt="Fotografia de la organización" class="portada">
+    <h1>Calculadora</h1>
+    <h3>¿Que desea hacer? LOL</h3>
 </body>
 </html>
 
 
+<!-- Todo lo que uno quiere agregar tipo texto, imagen, etc lo pone en body-->
+<!-- en  style (adentro de head) tipos de estilos ya sea de imagenes o texto-->
 <!-- src es basicamente la ubicacion, alt es lo que aparece si un hipotetico caso la imagen no carga-->
 <!-- <img src="Assets/obra-civil-obra-civil.jpg" alt="Fotografia de la organización" width="1900" height="560">-->
