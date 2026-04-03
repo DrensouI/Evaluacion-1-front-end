@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEXACALL</title>
+    <style>
+        body{
+            /* Esto basicamente en dejar el margin es el espacio que podria dejar entre arriba y el elemento, dejarlo en 0 se quedara pegado*/
+            margin: 0;
+        }
+        .barra-superior{ /* Esto se podria considerar como una clase (def ?)poniendo sus caracteristicas */
+            width: 100%; /* Basicamente que use todo el ancho y no deje ningun espacio en los lados*/
+            height: 40px; /*El tamaño en si del borde*/
+            /* heigh es tanto el tamaño y background-color el color en especifico */
+            background-color:red;
+            position: relative; /*En resumen todo lo que uno ponga adentro de esa barra se posiciona dentro de ahi, quedandose ahi por defecto la barra*/
+        }
+        .tipo-texto-barra{
+            position: absolute; /* Puede moverse libremente en la barra siempre y cuando que su def padre tenga relative*/
+            color: white;
+            font-family: Arial, Helvetica, sans-serif; /* El tipo de letra, en el caso que no pille Arial usa otros que son parecidos y asi */
+            /*font-weight: bold;  Basicamente poner el texto en negrito pero estoy en duda igual si usarlo o no*/
+        }
+        .primer-texto-barra{
+            top: 10%; /* La posicion vertical del texto*/
+            left: 8%; /* La posicion horizontal del texto*/
+            transform: translateY(-50%); /* Basicamente es centrarlo verticalmente el texto*/     
+        }
+        .segundo-texto-barra{
+            top: 10%; /* La posicion vertical del texto*/
+            left: 18%; /* La posicion horizontal del texto*/
+            transform: translateY(-50%); /* Basicamente es centrarlo verticalmente el texto*/     
+        }
+        .tercer-texto-barra{
+            top: 10%; /* La posicion vertical del texto*/
+            left: 75%; /* La posicion horizontal del texto*/
+            transform: translateY(-50%); /* Basicamente es centrarlo verticalmente el texto*/     
+        }
+
+
+
+/*----------   SECCION MENU   ----------*/
+        .logo-empresa{
+        height: 90px;
+        margin-left: 50px; /*Moverlo horizontalmente*/
+        margin-top: 4px; /*Moverlo verticalmente*/
+        }
+        .barra-menu{
+            width: 100%; /* Basicamente que use todo el ancho y no deje ningun espacio en los lados*/
+            height: 90px; /*El tamaño en si del borde*/
+            /* heigh es tanto el tamaño y background-color el color en especifico */
+            background-color:rgb(255, 255, 255);
+            position: relative; /*En resumen todo lo que uno ponga adentro de esa barra se posiciona dentro de ahi, quedandose ahi por defecto la barra*/            
+        }
+        .tipo-texto-menu{
+            position: absolute; /* Puede moverse libremente en la barra siempre y cuando que su def padre tenga relative*/
+            color:rgb(110, 110, 110);
+            cursor: pointer; /* Basicamente que se sienta que pueda hacer click*/
+            font-family: Arial, Helvetica, sans-serif; /* El tipo de letra, en el caso que no pille Arial usa otros que son parecidos y asi */
+            font-weight: bold; /* Basicamente poner el texto en negrito pero estoy en duda igual si usarlo o no*/
+        }
+        .primer-texto-menu{
+            top: 35%; /* La posicion vertical del texto*/
+            left: 36%; /* La posicion horizontal del texto*/
+            transform: translateY(-50%); /* Basicamente es centrarlo verticalmente el texto*/     
+        }
+        .segundo-texto-menu{
+            top: 35%; /* La posicion vertical del texto*/
+            left: 42%; /* La posicion horizontal del texto*/
+            transform: translateY(-50%); /* Basicamente es centrarlo verticalmente el texto*/     
+        }
+        .tercer-texto-menu{
+            top: 35%; /* La posicion vertical del texto*/
+            left: 48%; /* La posicion horizontal del texto*/
+            transform: translateY(-50%); /* Basicamente es centrarlo verticalmente el texto*/     
+        }
+        .cuarto-texto-menu{
+            top: 35%; /* La posicion vertical del texto*/
+            left: 54%; /* La posicion horizontal del texto*/
+            transform: translateY(-50%); /* Basicamente es centrarlo verticalmente el texto*/     
+        }
+        .quinto-texto-menu{
+            top: 35%; /* La posicion vertical del texto*/
+            left: 60%; /* La posicion horizontal del texto*/
+            transform: translateY(-50%); /* Basicamente es centrarlo verticalmente el texto*/     
+        }
+
+    </style>
+</head>
+<body>
+    <div class="barra-superior">
+        <p class="tipo-texto-barra primer-texto-barra">📞 +56 9 4201 7168</p>
+        <p class="tipo-texto-barra segundo-texto-barra">📩 contacto@hexacall.cl</p>
+        <p class="tipo-texto-barra tercer-texto-barra">📅  Lunes - Viernes: 8:00 AM - 18:00 PM</p>
+    </div>
+
+    <div class="barra-menu">
+        <img src="assets/imagen_2023-05-29_182940821-YBgoyeD15xtkL1j1-convertido-de-avif.png" alt="Logo de la Empresa" class="logo-empresa">
+        <p class="tipo-texto-menu primer-texto-menu">Inicio</p>
+        <p class="tipo-texto-menu segundo-texto-menu">Nosotros</p>
+        <p class="tipo-texto-menu tercer-texto-menu">Servicios</p>
+        <p class="tipo-texto-menu cuarto-texto-menu">Proyectos</p>
+        <p class="tipo-texto-menu quinto-texto-menu">Contacto</p>
+    </div>
+</body>
+</html>
