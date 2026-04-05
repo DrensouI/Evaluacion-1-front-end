@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HEXACALL</title>
     <style>
+
+/*----------   SECCION BARRA INICIAL   ----------*/
         body{
             /* Esto basicamente en dejar el margin es el espacio que podria dejar entre arriba y el elemento, dejarlo en 0 se quedara pegado*/
             margin: 0;
@@ -86,6 +88,82 @@
             transform: translateY(-50%); /* Basicamente es centrarlo verticalmente el texto*/     
         }
 
+
+/*----------   SECCION INICIAL?   ----------*/
+
+
+        .inicial{
+            position: relative;
+            height: 100vh;
+            background-image: url("assets/foto1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .inicial::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.6); /* oscurece */ /* Basicamente agregarle un filtro oscuro */
+            z-index: 0;
+        }
+
+        .primera-foto{
+            height: 1050px;
+            width:  100%;
+            object-fit: cover;
+            position: relative;
+        }
+        .tipo-texto-titulo-inicial{
+            font-family: Arial, Helvetica, sans-serif; /* El tipo de letra, en el caso que no pille Arial usa otros que son parecidos y asi */       
+            position: absolute;
+            z-index: 1;
+        }
+        .primer-texto-inicial{
+            font-size: 90px; /* Aumentar el tamaño del texto*/
+            color: rgb(255, 255, 255);
+            font-weight: bold;  /*Basicamente poner el texto en negrito pero estoy en duda igual si usarlo o no*/    
+            top: 27%; /* La posicion vertical del texto pero de arriba hacia abajo*/
+            left: 20%; /* La posicion horizontal del texto*/
+        }
+        .segundo-texto-inicial{
+            font-size: 90px; /* Aumentar el tamaño del texto*/
+            color: rgb(255, 40, 40);
+            font-weight: bold;  /*Basicamente poner el texto en negrito pero estoy en duda igual si usarlo o no*/    
+            top: 37%; /* La posicion vertical del texto pero de arriba hacia abajo*/
+            left: 20%; /* La posicion horizontal del texto*/
+        }
+        .tercer-texto-inicial{
+            font-size: 25px; /* Aumentar el tamaño del texto*/
+            color: rgb(161, 161, 161);
+            top: 57%; /* La posicion vertical del texto  pero de arriba hacia abajo*/
+            left: 20%; /* La posicion horizontal del texto*/
+            font-weight: 600;
+        }
+        .cuarto-texto-inicial{
+            color: rgb(255, 255, 255);
+            bottom: 5%; /* La posicion vertical del texto pero de abajo hacia arriba*/
+            left: 20%; /* La posicion horizontal del texto*/
+            font-size: 25px;
+        }
+
+        .quinto-texto-inicial{
+            color: rgb(255, 255, 255);
+            bottom: 5%; /* La posicion vertical del texto pero de abajo hacia arriba*/
+            left: 45%; /* La posicion horizontal del texto*/
+            font-size: 25px;
+        }
+
+        .sexto-texto-inicial{
+            color: rgb(255, 255, 255);
+            /*top: 103%; /* La posicion vertical del texto*/
+            bottom: 5%; /* La posicion vertical del texto pero de abajo hacia arriba*/
+            left: 75%; /* La posicion horizontal*/
+            font-size: 25px;
+        }
     </style>
 </head>
 <body>
@@ -102,6 +180,17 @@
         <p class="tipo-texto-menu tercer-texto-menu">Servicios</p>
         <p class="tipo-texto-menu cuarto-texto-menu">Proyectos</p>
         <p class="tipo-texto-menu quinto-texto-menu">Contacto</p>
+    </div>
+
+    <div class="inicial">
+        <h1 class="tipo-texto-titulo-inicial primer-texto-inicial">Construimos el</h1>
+        <h1 class="tipo-texto-titulo-inicial segundo-texto-inicial">Futuro Industrial</h1>
+        <p class="tipo-texto-titulo-inicial tercer-texto-inicial">Líderes en montajes civiles e industriales con más de 15 años de experiencia. 
+            <br>Proyectos de alta complejidad ejecutados con excelencia.
+        </p>
+        <p class="tipo-texto-titulo-inicial cuarto-texto-inicial">✓ Equipos Especializados</p>
+        <p class="tipo-texto-titulo-inicial quinto-texto-inicial">✓ Seguridad Garantizada</p>
+        <p class="tipo-texto-titulo-inicial sexto-texto-inicial">✓ Entregas a Tiempo</p>
     </div>
 </body>
 </html>
