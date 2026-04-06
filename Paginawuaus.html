@@ -164,6 +164,36 @@
             left: 75%; /* La posicion horizontal*/
             font-size: 25px;
         }
+
+/*----------   SECCION SERVICIOS  ----------*/
+        .nuestros-servicios{ /* Esto se podria considerar como una clase (def ?)poniendo sus caracteristicas */
+            width: 100%; /* Basicamente que use todo el ancho y no deje ningun espacio en los lados*/
+            height: 700px; /*El tamaño en si del borde*/
+            /* heigh es tanto el tamaño y background-color el color en especifico */
+            background-color:rgb(255, 255, 255);
+            position: relative; /*En resumen todo lo que uno ponga adentro de esa barra se posiciona dentro de ahi, quedandose ahi por defecto la barra*/
+        }
+        .tipo-texto-servicios{
+            position: absolute; /* Puede moverse libremente en la barra siempre y cuando que su def padre tenga relative*/
+            font-family: Arial, Helvetica, sans-serif; /* El tipo de letra, en el caso que no pille Arial usa otros que son parecidos y asi */
+        }
+        .primer-texto-servicios{
+            font-size: 35px; /* Aumentar el tamaño del texto*/
+            color: black;
+            font-weight: bold;  /*Basicamente poner el texto en negrito pero estoy en duda igual si usarlo o no*/    
+            top: 6%; /* La posicion vertical del texto pero de arriba hacia abajo*/
+            left: 41%; /* La posicion horizontal del texto*/
+        }
+        .segundo-texto-servicios{
+            font-size: 23px; /* Aumentar el tamaño del texto*/
+            color: rgb(124, 124, 124);
+            top: 14%; /* La posicion vertical del texto  pero de arriba hacia abajo*/
+            left: 26.7%; /* La posicion horizontal del texto*/
+        }
+        .linea-abajo-servicios{
+            display: block; /* Basicamente hace que la linea que se hizo un espacio hacia abajo sea como "independiente" pero solamente hablando de espacios (creo?)*/
+            margin-left: 325px; /* cuanto quiero que se mueva a la izquierda la linea en especifica que esta abajo del texto */
+        }
     </style>
 </head>
 <body>
@@ -191,6 +221,14 @@
         <p class="tipo-texto-titulo-inicial cuarto-texto-inicial">✓ Equipos Especializados</p>
         <p class="tipo-texto-titulo-inicial quinto-texto-inicial">✓ Seguridad Garantizada</p>
         <p class="tipo-texto-titulo-inicial sexto-texto-inicial">✓ Entregas a Tiempo</p>
+    </div>
+
+    <div class="nuestros-servicios">
+        <h1 class="tipo-texto-servicios primer-texto-servicios">Nuestros Servicios</h1>
+        <p class="tipo-texto-servicios segundo-texto-servicios">Soluciones integrales en montajes civiles e industriales adaptadas a las necesidades
+        <span class="linea-abajo-servicios">específicas de tu proyecto</span> <!-- span es basicamente un salto de linea hacia abajo como si fuera un \n-->
+        </p>
+
     </div>
 </body>
 </html>
